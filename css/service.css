@@ -1,0 +1,290 @@
+
+/*[START]
+NAVIGATION BAR*/
+
+body {
+	margin: 0;
+	background: RGB(219, 204, 181);
+	font-weight: 800;
+  display: flex;
+  flex-direction: column;
+}
+
+.navcontainer {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: rgb(22, 44, 58);
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  font-family: Cinzel;
+  color: white;
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  font-family: Brandon Grotesque;
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  position: relative;
+}
+
+nav a {
+  color: RGB(219, 204, 181);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: RGB(181, 104, 76);
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: RGB(181, 104, 76);
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/*[END]
+NAVIGATION BAR*/
+
+/*[START]
+PRODUCT LISTING */
+
+.pcontainer{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  width: 80vw;
+  border-radius: 20px;
+
+}
+.card{
+  width: 90%;
+  height: 90%;
+  border-radius: 8px;
+  display: flex;
+  box-sizing: border-box;
+}
+.card h2{
+  display: flex;
+  flex-direction: row;
+}
+.card .images, .card .infos{
+  width: 50%;
+}
+
+.infos .price{
+  display: flex;
+}
+.infos .more-infos{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.infos{
+  box-sizing: border-box;
+  border: 2px solid rgb(22, 44, 58);
+  background: rgb(219, 204, 181);
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px 50px 60px 20px;
+}
+.infos h2{
+  color: rgb(22, 44, 58);
+  font-family: Brandon Grotesque;
+  font-size: 40px;
+
+}
+.infos h5{
+  color: RGB(181, 104, 76);
+  transform: translate(0%, -300%);
+}
+.infos h6{
+  color: grey;
+  font-family: fauna one;
+  font-size: 10px;
+  transform: translate(0%, -600%);
+}
+.infos h6:hover{
+  color: RGB(181, 104, 76);
+}
+.infos p{
+  font-family: fauna one;
+  font-size: 13px;
+  line-height: 20px;
+  width: 100%;
+  transform: translateY(-100%);
+}
+.btn3{
+  background: rgb(219, 204, 181);
+  color: rgb(22, 44, 58);
+  border-radius: 15px;
+  border: 2px solid rgb(22, 44, 58);
+}
+
+.btn3:hover{
+  color: RGB(181, 104, 76);
+  background: rgb(22, 44, 58);
+}
+
+.buttons .btn3{
+  width: 100px;
+  height: 30px;
+  font-family: fauna one;
+  transform: translateY(-330%);
+}
+.images{
+  box-sizing: border-box;
+  height: 80%;
+  display: flex;
+  background: rgb(22, 44, 58);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 30px solid RGB(181, 104, 76);
+}
+
+/*[END]
+PRODUCT LISTING*/
+
+/*[START]
+TEXT INPUT FIELD WITH LABEL
+based on https://www.youtube.com/watch?v=IxRJ8vplzAo */
+
+.form{
+  width: 300px;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  color: rgb(22, 44, 58);
+  font-family: fauna one;
+}
+
+.form input{
+  background: rgb(219, 204, 181);
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-family: fauna one;
+  font-size: 14px;
+  padding-top: 15px;
+  border: none;
+  outline: none;
+}
+
+.form label{
+
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.form label::after{
+  content: "";
+  left: 0px;
+  bottom: -1px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid rgb(22, 44, 58);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content-name{
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+    /*animation & styling*/
+.form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name{
+  transform: translateY(-150%);
+  font-family: fauna one;
+  font-size: 12px;
+  color: grey;
+}
+
+.form input:focus + .label-name::after, .form input:valid + .label-name::after{
+  transform: translateX(0%);
+}
+
+/*[END]
+TEXT INPUT FIELD WITH LABEL*/
+
+/*[START]
+PAYMENT FORM */
+.wrapper{
+  width: 100%;
+  padding: 10px;
+
+}
+
+.pfcontainer{
+  max-width: 500px;
+  height: auto;
+  margin: 0px auto;
+  background: rgb(219, 204, 181);
+  padding: 20px 40px 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 10px solid RGB(181, 104, 76);
+  border: 5px solid rgb(22, 44, 58);
+}
+
+.title{
+  text-align: center;
+  font-family: Brandon-Grotesque;
+  font-size: 20px;
+  color: rgb(22, 44, 58);
+}
+
+.pfcontainer .btn3{
+  width: 100px;
+  height: 30px;
+  font-family: fauna one;
+  font-size: 13px;
+  float: right;
+  transform: translateY(-130%);
+}
+
+/*[END]
+PAYMENT FORM */

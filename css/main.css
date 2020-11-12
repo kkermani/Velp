@@ -1,0 +1,825 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+
+body {
+  box-sizing: border-box;
+}
+
+h2 {
+  width: 85%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro {
+    color: rgb(22, 44, 55);
+    text-align: center;
+    padding: 20px;
+}
+
+.intro h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+@media (max-width: 40rem) {
+    .intro h1 {
+      font-family: 'Cinzel', serif;
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+  }
+
+  @media (max-width: 15rem) {
+    .intro h1 {
+      font-family: 'Cinzel', serif;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  }
+
+.intro h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 40px;
+}
+
+@media (max-width: 40rem) {
+    .intro h2 {
+      font-family: 'Cinzel', serif;
+      font-weight: lighter;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 15rem) {
+    .intro h2 {
+      font-family: 'Cinzel', serif;
+      font-weight: lighter;
+      font-size: 1rem;
+    }
+  }
+
+.intro p {
+    font-size: 15px;
+}
+
+.element {
+  max-width: 80%;
+  padding: 30px;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*color palette*/
+
+.containers {
+  width: 100%;
+}
+
+.containers p {
+  font-family: fauna one;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.palette {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.boxp {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+}
+
+.cp1 {
+  background: rgb(219, 204, 181);
+}
+
+.cp2 {
+  background: RGB(181, 104, 76);
+}
+
+.cp3 {
+  background: rgb(22, 44, 58);
+}
+
+/*color palette*/
+
+code {
+  width: 300px;
+  height: 10px;
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+.para p {
+  margin: 20px;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.para2 {
+  margin: 20px;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.para code {
+  margin: 20px;
+  height: 20px;
+  transform: translateY(30%);
+}
+
+@media screen and (min-width: 50rem) {
+  .btns {
+    display: inline;
+    height: 60px;
+    transform: translate(-150%, 270%);
+  }
+}
+
+/*Style Guide basic styling*/
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling buttons */
+
+.container {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  background: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: Fauna One;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn1 {
+  width: 120px;
+  max-height: 50px;
+  background: rgb(22, 44, 58);
+  color: rgb(219, 204, 181);
+  border-radius: 15px;
+  border: 2px solid rgb(219, 204, 181);
+}
+
+.btn2 {
+  width: 120px;
+  max-height: 50px;
+  background: rgb(22, 44, 58);
+  color: white;
+  border-radius: 15px;
+  border: 0px;
+}
+
+.btn3 {
+  background: rgb(219, 204, 181);
+  color: rgb(22, 44, 58);
+  border-radius: 15px;
+  border: 2px solid rgb(22, 44, 58);
+}
+
+.btn4 {
+  color: #fff;
+}
+
+.btn4:hover {
+  color: rgb(22, 44, 58);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: rgb(22, 44, 58);
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn4::before {
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+  height: 180%;
+}
+
+.btn4:hover::before {
+  height: 0%;
+}
+
+.btn4:focus {
+  background: rgb(22, 44, 58);
+}
+
+.btn3:hover {
+  color: RGB(181, 104, 76);
+  background: rgb(22, 44, 58);
+}
+
+/*[START]
+TEXT INPUT FIELD WITH LABEL
+based on https://www.youtube.com/watch?v=IxRJ8vplzAo */
+
+.textinput {
+  background: none;
+}
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  color: rgb(22, 44, 58);
+  font-family: fauna one;
+}
+
+.form input {
+  background: rgb(219, 204, 181);
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-family: fauna one;
+  font-size: 14px;
+  padding-top: 15px;
+  border: none;
+  outline: none;
+}
+
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.form label::after {
+  content: "";
+  left: 0px;
+  bottom: -1px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid rgb(22, 44, 58);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+/*animation & styling*/
+
+.form input:focus+.label-name .content-name, .form input:valid+.label-name .content-name {
+  transform: translateY(-150%);
+  font-family: fauna one;
+  font-size: 12px;
+  color: grey;
+}
+
+.form input:focus+.label-name::after, .form input:valid+.label-name::after {
+  transform: translateX(0%);
+}
+
+/*[END]
+TEXT INPUT FIELD WITH LABEL*/
+
+/*[START]
+RADIO BUTTON WITH LABEL*/
+
+.rcontainer {
+  display: flex;
+  height: 50px;
+  transform: translate(-150%, 350%);
+}
+
+.rcontainer input[type="radio"] {
+  display: none;
+}
+
+.rcontainer label {
+  position: relative;
+  color: rgb(22, 44, 58);
+  font-family: fauna one;
+  font-size: 15px;
+  border: 2px solid rgb(22, 44, 58);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rcontainer label::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border: 1px solid rgb(22, 44, 58);
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.rcontainer input[type="radio"]:checked+label {
+  background-color: rgb(22, 44, 58);
+  color: white;
+}
+
+.rcontainer input[type="radio"]:checked+label::before {
+  height: 6px;
+  width: 6px;
+  border: 5px solid rgb(219, 204, 181);
+  background-color: rgb(22, 44, 58);
+}
+
+/*[END]
+RADIO BUTTON WITH LABEL*/
+
+/*[START]
+NUMBERED LIST*/
+
+/*[END]
+NUMBERED LIST*/
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+.wheadings {
+  font-family: 'Cinzel', serif;
+  font-style: normal;
+  color: rgb(22, 44, 58);
+  text-align: center;
+  width: 100%;
+}
+
+.theadings{
+  font-size: 40px;
+  color: rgb(22, 44, 58);
+  text-align: center;
+  width: 100%;
+}
+
+.t1{
+  font-family: 'Cinzel', serif;
+}
+
+.t2{
+  font-family: 'Fauna One', serif;
+}
+
+.t3{
+  font-family: 'Times New Roman', serif;
+}
+
+.h1 {
+  font-size: 40px;
+}
+
+.h2 {
+  font-size: 35px;
+}
+
+.h3 {
+  font-size: 30px;
+}
+
+.h4 {
+  font-size: 23px;
+  font-style: italic;
+}
+
+.paragraphs {
+  font-family: fauna one;
+  color: rgb(22, 44, 58);
+}
+
+.box2 {
+  width: 300px;
+}
+
+.box2 h2 {
+  color: white;
+  background: rgb(22, 44, 58);
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 300;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.box2 .imgBox {
+  position: relative;
+  overflow: hidden;
+}
+
+.box2 .imgBox img {
+  max-width: 100%;
+  transition: transform 2s;
+}
+
+.box2:hover .imgBox img {
+  transform: scale(1.2);
+}
+
+.imglink {
+  margin-top: 50px;
+  display: flex;
+}
+
+.icons {
+  margin: 0px 50px 20px 200px;
+  height: 100px;
+  width: 300px;
+  padding-left: 10px;
+}
+
+.icons img {
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 55px 20px 30px 10px;
+}
+
+.box {
+  width: 300px;
+  font-family: fauna one;
+}
+
+.box h2 {
+  color: white;
+  background: rgb(22, 44, 58);
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 300;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.box ul {
+  position: relative;
+  background: #fff;
+}
+
+.box ul li {
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+  background: RGB(219, 204, 181);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+}
+
+.box ul li:hover {
+  transform: scale(1.1);
+  z-index: 100;
+  background: rgb(181, 104, 76);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.box ul li span {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background: rgb(22, 44, 58);
+  color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  transform: translateY(-20px);
+}
+
+.navbar .links {
+  font-family: 'fauna one', serif;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(22, 44, 58);
+  padding: 0;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.navbar .links li {
+  padding: 20px;
+  padding-bottom: 10px;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar .links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1em;
+  font-size: 13px;
+  font-weight: bold;
+  color: RGB(219, 204, 181);
+}
+
+.navbar a:hover {
+  color: RGB(181, 104, 76);
+}
+
+.navbar a::before {
+  content: '';
+  display: block;
+  transform: translateY(0%);
+  height: 9px;
+  background-color: RGB(255, 255, 255, 0);
+  top: 0;
+  width: 0%;
+}
+
+/*[START]
+PRODUCT LISTING */
+
+
+/*[END]
+PRODUCT LISTING*/
+
+/*[START]
+PAYMENT FORM */
+
+.wrapper {
+  width: 100%;
+  padding: 0px;
+}
+
+.pfcontainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 325px;
+  height: auto;
+  margin: 0px auto;
+  background: rgb(219, 204, 181);
+  padding: 20px 40px 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 10px solid RGB(181, 104, 76);
+}
+
+.pfcontainer img {
+  margin-top: 20px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-family: 'cinzel', serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(22, 44, 58);
+}
+
+.pfcontainer .btn3 {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+}
+
+.orderinput{
+  font-family: 'fauna one', serif;
+  color: rgb(22, 44, 58);
+  margin-top: 20px;
+}
+
+/*[END]
+PAYMENT FORM */
+
+/*  The top navigation */
+
+nav {
+  overflow: initial;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 5%;
+  height: 70px;
+  background: rgb(22, 44, 58);
+}
+
+nav .logo {
+  float: left;
+  padding-bottom: 0rem;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: Cinzel;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: white;
+}
+
+@media (max-width: 20rem) {
+  nav .logo {
+    font-size: 1rem;
+  }
+}
+
+.logoCo {
+  text-decoration: none;
+  color: white;
+}
+
+.logoCo a:hover {
+  color: white
+}
+
+.logoCo a::before {
+  content: '';
+  display: block;
+  transform: translateY(0%);
+  height: 9px;
+  background-color: RGB(255, 255, 255, 0);
+  top: 0;
+  width: 0%;
+}
+
+nav .links {
+  font-family: 'fauna one', serif;
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .links li {
+  padding-bottom: 30px;
+  list-style: none;
+  align-items: center;
+}
+
+nav .links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1em;
+  font-size: 13px;
+  font-weight: bold;
+  color: RGB(219, 204, 181);
+}
+
+#nav-toggle {
+  position: relative;
+  top: -100px;
+}
+
+nav .icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
+nav .icon-burger .line {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+  nav .logo {
+    transform: translateY(-20%);
+    float: none;
+    width: auto;
+    justify-content: center;
+  }
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 70px;
+    bottom: 100%;
+    background: rgb(39, 39, 39);
+    width: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+  nav .links a {
+    font-size: 15px;
+  }
+  nav .icon-burger {
+    display: block;
+  }
+  nav :checked~.links {
+    bottom: 0;
+  }
+  nav :checked~.icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked~.icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked~.icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+}
+
+nav a:hover {
+  color: RGB(181, 104, 76);
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  transform: translateY(-100%);
+  height: 5px;
+  background-color: RGB(181, 104, 76);
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.navcontainer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.homeColor {
+  color: rgb(134, 134, 134);
+}
+
+.header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.noColor {
+  color: black;
+  text-decoration: none;
+}
+
+.noColor a:hover a:focus {
+  color: rgb(233, 233, 233);
+}
+
+span.c {
+  display: block;
+}
+
+/*The top navigation */
