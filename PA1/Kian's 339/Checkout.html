@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Checkout</title>
+<meta charset="utf-8">
+    
+    <link href="css/main-marielle.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+
+ <!--        font linking-->
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+
+<!--        viewport-->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="Nav">
+     <div class="NavContainer">
+        <div class="Nav-Item Nav-Mobile-Hide">
+            <div class="Nav-Dropdown">
+                <a class="Nav-Button"> SHOP &#8964;</a>
+                <div class="Nav-Dropdown-Content">
+                    <a href="BestSellers.html">Bestsellers</a>
+                    <a href="BestSellers.html">Clothing</a>
+                    <a href="BestSellers.html">Books</a>
+                    <a href="BestSellers.html">Posters</a>
+                    <a href="BestSellers.html">Antiques</a>
+                </div>
+            </div>
+            <div class="Nav-Dropdown">
+                <a class="Nav-Button"> ABOUT &#8964;</a>
+                <div class="Nav-Dropdown-Content">
+                    <a href="about.html">About Us</a>
+                    <a href="WhatIsRetrofuturism.html">What Is Retrofuturism?</a>
+                    <a href="contactus.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="Nav-Item">
+            <a class="Nav-SiteTitle" href="index.html">Space Futura</a>
+        </div>
+        <div class="Nav-Item Nav-Mobile-Hide">
+            <a class="Nav-Button" href="login.html">Login</a>
+            <a class="Nav-Button" href="cart.html">Cart</a>
+        </div>
+    </div>
+        <div class="Nav-Item Nav-Mobile-Display"> 
+            <a class="Nav-Button">Menu</a>
+        
+        <div class="Nav-MobileMenu">
+            <h4 class="Nav-MobileMenu-Titles">Shop</h4>
+            <a href="BestSellers.html">Bestsellers</a>
+            <a>Clothing</a>
+            <a>Books</a>
+            <a>Posters</a>
+            <a>Antiques</a>
+            <h4 class="Nav-MobileMenu-Titles"> About</h4>
+            <a>About Us</a>
+            <a>What Is Retrofuturism?</a>
+            <a href="contactus.html">Contact Us</a>
+            <a class="Nav-MobileMenu-Special" href="login.html">Login</a>
+            <a class="Nav-MobileMenu-Special" href="cart.html">Cart</a>
+            
+        </div>
+        </div>
+    </nav>
+    
+    <section id="checkout" class="Checkout">
+        <div class="Content-Wrapper TwelveColGrid">
+            <div class="Checkout-Payment">
+                <div class="Checkout-Info">
+                    <h2>Delivery Information</h2>
+                    <div class="Checkout-Info-Hidden">
+                        <div class="Checkout-Account">
+                            <h3>Contact Information</h3>
+                            <p> Already have an account? <a href="login.html">Log in</a></p>
+                        </div>
+                        <form class="Checkout-Form">
+                            <label class="Checkout-Label" for="email">Email</label>
+                            <input type="text" id="email" class="Checkout-Input" placeholder="Email">
+                        </form>
+                        
+                        <div>
+                            <h3 class="Checkout-h3"> Shipping Address</h3>
+                            <form class="Checkout-Form">
+                                <label class="Checkout-Label" for="FirstName">First Name</label>
+                                <input type="text" id="FirstName" class="Checkout-Input" placeholder="First Name">
+                                
+                                <label class="Checkout-Label" for="LastName">Last Name</label>
+                                <input type="text" id="LastName" class="Checkout-Input" placeholder="Last Name">
+                                
+                                <label class="Checkout-Label" for="Address">Address</label>
+                                <input type="text" id="Address" class="Checkout-Input" placeholder="Address">
+                                
+                                 <label class="Checkout-Label" for="City">City</label>
+                                <input type="text" id="City" class="Checkout-Input" placeholder="City">
+                                
+                                <label class="Checkout-Label" for="Province">Province or Territory</label>
+                                <select name="Province" id="Province">
+                                    <option value="BritishColumbia">British Columbia</option>
+                                    <option value="Alberta">Alberta</option>
+                                    <option value="Saskatchewan">Saskatchewan</option>
+                                    <option value="Manitoba">Manitoba</option>
+                                    <option value="Ontario">Ontario</option>
+                                    <option value="Quebec">Quebec</option>
+                                    <option value="Nova">Nova Scotia</option>
+                                    <option value="New">New Brunswick</option>
+                                    <option value="Newfoundland">Newfoundland</option>
+                                    <option value="Prince">Prince Edward Island</option>
+                                    <option value="Yukon">Yukon</option>
+                                    <option value="North">North West Territories</option>
+                                    <option value="Nunavut">Nunavut</option>
+                                </select>
+                                
+                                <label class="Checkout-Label" for="Country">Country</label>
+                                <select name="Country" id="Country">
+                                    <option value="Canada">Canada</option>
+                                    <option value="USA">USA</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Checkout-Info">
+                    <h2>Delivery Options</h2>
+                    <div class="Checkout-Info-Hidden">
+                        <form class="Checkout-Form">
+                            <label class="Delivery Options" for="Delivery">Delivery Options</label>
+                            <select name="Delivery" id="Delivery">
+                                    <option value="Canada">Standard Shipping &#40;$12.00CAD&#41;</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="Checkout-Info">
+                    <h2>Payment Information</h2>
+                    <div class="Checkout-Info-Hidden">
+                        <form class="Checkout-Form">
+                                <label class="Checkout-Label" for="FirstName">Card Number</label>
+                                <input type="text" id="Number" class="Checkout-Input" placeholder="Card Number">
+                            
+                                <label class="Checkout-Label" for="NameOnCard">Name on Card</label>
+                                <input type="text" id="NameOnCard" class="Checkout-Input" placeholder="Name on Card">
+                            
+                                <label class="Checkout-Label" for="Expiration">Expiration Date</label>
+                                <input type="text" id="Expiration" class="Checkout-Input" placeholder="Expiration Date &#40;MM/DD&#41;">
+                            
+                                <label class="Checkout-Label" for="Security">Security Code </label>
+                                <input type="text" id="Security" class="Checkout-Input" placeholder="Security Code">
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="Checkout-Item">
+                <h2>My Sub-Total</h2>
+                <div class="Cart-Total-Sub">
+                    <h3>Sub-total</h3>
+                    <h3>$19.99 CAD</h3>
+                </div>
+                <div class="Cart-Total-Sub Checkout-Underline">
+                    <h3>Delivery</h3>
+                    <h3>$12.00 CAD</h3>
+                </div>
+                
+                <div class="Cart-Total-Sub">
+                    <h3>GST</h3>
+                    <h3>$1.60 CAD</h3>
+                </div>
+                
+                <div class="Cart-Total-Sub Checkout-Underline">
+                    <h3>PST</h3>
+                    <h3>$2.24 CAD</h3>
+                </div>
+                
+                <div class="Cart-Total-Sub">
+                    <h3>Total</h3>
+                    <h3>$35.83 CAD</h3>
+                </div>
+            </div>
+            
+        </div>
+        <div class="Button-Container">
+                 <a href="PurchaseConfirmation.html" class="Button Checkout-Button">Pay Now</a>
+            </div>
+
+    </section>
+
+    
+    <footer>
+        <div class="Content-Wrapper TwelveColGrid">
+            <div class="Footer-Shop">
+                <h3 class="Footer-Header">Shop</h3>
+                <a class="Footer-Link" href="BestSellers.html">Best Sellers</a>
+                <a href="BestSellers.html" class="Footer-Link">Clothing</a>
+                <a href="BestSellers.html" class="Footer-Link">Books</a>
+                <a href="BestSellers.html" class="Footer-Link">Posters</a>
+                <a href="BestSellers.html" class="Footer-Link">Antiques</a>
+            </div>
+            <div class="Footer-About">
+                <h3 class="Footer-Header">About</h3>
+                <a class="Footer-Link" href="about.html">About Us</a>
+                <a class="Footer-Link" href="WhatIsRetrofuturism.html">What is Retrofuturism?</a>
+                <a class="Footer-Link" href=contactus.html> Contact Us</a>
+            </div>
+            <div class="Footer-BTS">
+                <h3 class="Footer-Header">Behind the Scenes</h3>
+                <a class="Footer-Link" href="StyleGuide.html">Styleguide</a>
+                <a  class="Footer-Link" href="https://github.com/tamagotch-goth/P02-Kian-Marielle">Git</a>
+                <a class="Footer-Link" href="Citations.html">Citations</a>
+            </div>
+            <div class="Footer-Copyright">
+               <p> &#169; 2020 Space Futura</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

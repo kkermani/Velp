@@ -1,0 +1,733 @@
+body{
+    font-family:sans-serif;
+    padding:0;
+    margin:0;
+}
+
+/* The navigation menu */
+
+.Nav{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.NavContainer{
+    background-color:#D66442;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    align-items:baseline;
+    
+    padding: 0 6em 0 6em;
+}
+
+.Nav-Button{
+    font-family:'PT Mono', monospace;
+    font-size:1em;
+    text-transform: uppercase;
+    color: #F2F2E9;
+    margin: 1em;
+}
+
+.Nav-SiteTitle{
+    font-family:'Righteous', cursive;
+    font-size: 2.250em;
+    text-transform: uppercase;
+    color: #F2F2E9;
+}
+
+.Nav-Button:hover, .Nav-Button:focus{
+    text-decoration: underline;
+}
+
+.Nav-Dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.Nav-Dropdown-Content{
+    display: none;
+    position:absolute;
+    background-color:#C4513B;
+    max-width:20em;
+    box-shadow: 4px 4px 10px rgba(51, 51, 51, 0.2);
+    z-index:1;  
+}
+
+.Nav-Dropdown-Content a{
+    font-family: 'PT Mono', monospace;
+    font-size: 1em;
+    text-transform: capitalize;
+    padding: .5em 1em .5em 1em;
+    display:block;
+    color: #F2F2E9;
+}
+
+.Nav-Dropdown-Content a:hover, .Nav-Dropdown-Content a:focus{
+    text-decoration: underline;
+    background-color: #BA4327;
+}
+
+.Nav-Dropdown:hover .Nav-Dropdown-Content, .Nav-Dropdown:focus .Nav-Dropdown-Content{
+    display: block;
+}
+
+.Nav-Mobile-Display{
+    display:none;
+    position:absolute;
+    top:.5em;
+    right:0;
+}
+
+.Nav-MobileMenu{
+    display:none;
+    background-color: #C4513B;
+    text-align: center;
+    z-index:1;
+    position: absolute;
+}
+
+.Nav-MobileMenu a{
+    display: block;
+    padding: .5em 4em .5em 4em;
+}
+
+.Nav-MobileMenu a:focus, .Nav-MobileMenu a:hover{
+    text-decoration:underline;
+    background-color: #BA4327;
+}
+
+.Nav-MobileMenu-Titles{
+    font-family:'Righteous', cursive;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.25em;
+}
+
+.Nav-MobileMenu-Special{
+    font-family:'Righteous', cursive;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.25em;
+}
+
+.Nav-MobileMenu-Special:hover, .Nav-MobileMenu-Special:focus{
+    text-decoration: underline;
+}
+
+.Nav-Mobile-Display:hover .Nav-MobileMenu{
+    display: block;
+    left: -10em;
+}
+
+@media (max-width:50.938em){
+    .NavContainer{
+      padding: 0;  
+    } 
+}
+
+@media (max-width: 38.125em){
+    .Nav-Mobile-Hide{
+        display:none;
+    }
+    .Nav-SiteTitle{
+        padding-left: 1em;
+        font-size: 1.5em;
+    }
+    
+    .Nav-Mobile-Display{
+        display:block;
+    }
+}
+
+.Everything-Except-Title{
+    padding:2em;
+    margin: 0 10em 0em 10em;
+}
+
+.MainPageTitle{
+    text-transform:uppercase;
+    text-align: center;
+    background-color: rgb(29,28,42);
+    color:rgb(242,243,234);
+    padding: 2em;
+    margin:0;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: .5px dashed rgb(29,28,42);
+}
+
+h1{
+    font-family:'Righteous',cursive;
+    font-size:3em;
+}
+
+h2{
+    font-family: 'Righteous',cursive;
+    text-transform: uppercase;
+    font-size:1.25em;
+    color: rgb(29,28,42);
+}
+
+h3,h4{
+    font-family:'PT Mono', monospace;
+    text-transform: uppercase; 
+    color: rgb(29,28,42);
+}
+
+h3{
+    font-size:1em;
+    font-weight:500;
+    text-decoration: underline;
+    padding-bottom: .5em;
+}
+
+h4{
+    font-size:.75em;
+    font-weight:500;
+    padding-bottom:0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+}
+
+p,a,input,ol,ul,label{
+    font-family: 'PT Sans', sans-serif;
+    font-size:1em;
+    color: rgb(29,28,42);
+}
+
+section h3 {
+  margin-bottom: 0;
+}
+
+section h4 {
+  margin-bottom: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+.LargerSectionTitles{
+    font-family: 'Righteous',cursive;
+    text-transform: uppercase;
+    font-size:1.5em;
+    text-decoration: underline;
+    margin-top:2em;
+}
+
+/*Main Page Navigation*/
+.MainStyleGuideNav-Item{
+    font-family: 'PT Mono' , monospace;
+    text-transform: uppercase;
+    padding:1.5em 1.5em 1.5em 3em;
+    color:rgb(29,28,42);
+    background-color: rgb(242,243,234);
+    text-decoration: none;
+    border: 2px solid rgb(29,28,42);
+}
+
+.MainStyleGuideNav-Item:hover, .MainStyleGuideNav-Item:focus{
+    text-decoration: underline;
+}
+/*End of Main Page Navigation*/
+
+/*Fonts Sections*/
+.RighteousFont{
+    font-family:'Righteous', cursive;
+}
+
+.RighteousFont-Context{
+    text-transform:uppercase;
+    font-size:1em;
+    text-decoration: none;
+    margin-bottom:0;
+    padding:0;
+}
+
+.RighteousFont-Sample{
+    font-size:3em;
+    margin:0 0 0 0;
+    text-transform:capitalize;
+}
+
+.RighteousFont-Name{
+    font-Size:1em;
+    margin:0 0 0 0;
+    text-transform:uppercase;
+    text-decoration: none;
+}
+
+.PtMonoFont{
+    font-family:'PT Mono', monospace;
+}
+
+.PtMonoFont-Context{
+    font-size:1em;
+    text-decoration: none;
+    margin-bottom:0;
+    padding:0;
+    text-transform: capitalize;
+}
+
+.PtMonoFont-Sample{
+    font-size:3em;
+    margin:0 0 0 0;
+    text-transform:capitalize;
+}
+
+.PtMonoFont-Name{
+    font-Size:1em;
+    margin:0 0 0 0;
+    text-decoration: none;
+    text-transform:capitalize;
+}
+
+.PTSansFont{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.PTSansFont-Context{
+    font-size:1em;
+    text-decoration: none;
+    margin-bottom:0;
+    padding:0;
+    text-transform: capitalize;
+}
+
+.PTSansFont-Sample{
+    font-size:3em;
+    margin:0 0 0 0;
+    text-transform:capitalize;
+}
+
+.PTSansFont-Name{
+    font-Size:1em;
+    margin:0 0 0 0;
+    text-decoration: none;
+    text-transform:capitalize;
+}
+
+/*End of Fonts Section*/
+
+/*Colour Section*/
+
+.ColourName-Title{
+    font-size: 1em;
+    margin-top:0;
+}
+
+.Colour-Item{
+    padding: 1.5em;
+}
+
+.Colour-Item1{
+    background-color: rgb(242,243,234);
+}
+
+.Colour-Item2{
+    background-color: rgb(29,28,42);
+}
+
+.Colour2{
+     color:rgb(242,243,234);
+}
+
+.Colour-Item3{
+    background-color:rgb(115,149,181);
+}
+
+.Colour-Item4{
+    background-color:rgb(214,100,67);
+}
+
+.ColourCode-Text{
+    font-size:.80em;
+}
+/*End of Colour Section*/
+
+/*Interactive Elements Section*/
+
+/*Nav Section*/
+.ExampleNav-Container{
+    display:inline-block;
+    text-transform:uppercase;
+    margin:2em;
+}
+
+.ExampleNav-Item {
+    font-family:'PT Mono',monospace;
+    font-size:1.25em;
+    padding: 1.5em;
+/*    margin:1em;*/
+    text-decoration: none;
+    -webkit-transition: text-decoration 0.5s ease-out;
+    transition: text-decoration 0.5s ease-out;
+}
+
+.ExampleNav-Item:hover, .ExampleNav-Item:focus{
+    text-decoration: underline;
+}
+
+.ExampleNav-Item1{
+    color: rgb(242,243,234);
+    background-color:rgb(29,28,42);
+}
+
+.ExampleNav-Item2{
+    color: rgb(29,28,42);
+    background-color:rgb(242,243,234);
+}
+/* End of Nav Section*/
+
+/*Default Button Section*/
+.ExampleButton-Container{
+    display:inline-block;
+    text-transform:uppercase;
+    margin:2em;
+}
+
+.ExampleButton-Item{
+    font-family: 'Righteous', cursive;
+    text-transform:uppercase;
+    font-size:1em;
+    padding:1.5em;
+    color:rgb(242,243,234);
+    background-color:rgb(115,149,181);
+    
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.ExampleButton-Item:hover, .ExampleButton-Item:focus{
+    background-color: rgb(214,100,67);
+}
+
+/*End of Default Button Section*/
+
+/*In-Text Link*/
+
+.Example-InTextLink{
+    color:rgb(214,100,67);
+    text-decoration: none;
+}
+
+.Example-InTextLink:hover, .Example-InTextLink:focus{
+    text-decoration: underline;
+}
+/*End of In-Text Link*/
+
+/*Input Field Styling*/
+
+.InputLabel{
+    font-family: 'PT Mono', monospace;
+    font-size: 1em;
+    padding: .5em 1em 1em 1.5em;  
+}
+
+input[type=text]{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    border: 2px solid rgb(29,28,42);
+    padding: .75em;
+    width:30%
+}
+
+input[type=text]:focus{
+    border:2px solid rgb(29,28,42);
+    outline:none;
+}
+/*End of Input-Field Styling*/
+
+/*End of Interactive Elements Section*/
+
+/*Text Elements*/
+
+/*Headers*/
+.Example-size, .Example-font{
+    font-family:'PT Mono', monospace;
+    font-size: 1em;
+    color: rgb(57,56,76);
+    padding-left: 2em;
+}
+
+.Example-h1{
+    font-family:'Righteous', cursive;
+    font-size:4em;
+    text-transform: uppercase;
+    color: rgb(29,28,42);
+    margin: .25em 0 .25em 0;
+    padding-left: 30px;
+}
+
+.Example-h2{
+    font-family:'Righteous', cursive;
+    font-size:2em;
+    text-transform: uppercase;
+    color: rgb(29,28,42);
+    margin: .25em 0 .25em 0;
+    padding-left: 30px;
+
+}
+
+.Example-h3{
+    font-family: 'PT Mono', monospace;
+    font-size: 1.5em;
+    color: rgb(57,56,76);
+    text-transform:lowercase;
+    text-decoration:none;
+    padding-left: 30px;
+}
+
+.Example-h4{
+    font-family: 'PT Mono', monospace;
+    font-size: 1em;
+    color: rgb(57,56,76);
+    text-transform:lowercase;
+    padding-left: 30px;
+}
+
+/*End of Headers*/
+
+/*Paragraphs*/
+.Example-Paragraph{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.75em;
+    width:60%;
+}
+/*End of Paragraphs*/
+
+/*Bulletted Lists*/
+ul{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    list-style: none;
+    line-height: 2em;
+}
+
+ul li::before {
+    content: "\2022";
+    color: rgb(115,149,181);  
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em;
+}
+/*End of Bulletted Lists*/
+
+li{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+}
+/*End of Text Elements*/
+
+/*Combined Elements*/
+
+/*Menu Bar*/
+.Menu-Item, .LogInCart-Item{
+    font-family:'PT Mono', monospace;
+    text-transform: uppercase;
+    padding: 0 1em 0 1em;
+}
+
+.Menu-Item:hover, .Menu-Item:focus, .LogInCart-Item:hover, .LogInCart-Item:focus{
+    text-decoration: underline;
+}
+
+.ExampleMainNav-Container{
+    text-decoration:none;
+}
+.Cart{
+    margin-top:0;
+}
+/*End of Menu Bar*/
+
+/*Product Listing*/
+.Product-Name{
+    font-family:'Righteous', cursive;
+    text-align: center;
+    font-size:1.5em;
+    padding-bottom: 0;
+    margin-bottom:0em;
+}
+.stars{
+    width:20%;
+    padding:0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.Product-rating{
+    text-align: center;
+}
+
+.Product-Description-Title{
+    padding: 2em 2em 0 2em;;
+    text-decoration: none;
+}
+
+.Product-Description{
+    padding: 1em 2em 0 2em;
+}
+
+.Product-AddToCart{
+    margin: 3em;
+    display:block;
+    font-family: 'Righteous', cursive;
+    text-transform:uppercase;
+    text-align: center;
+    font-size:1em;
+    padding:1.5em;
+    color:rgb(242,243,234);
+    background-color:rgb(115,149,181);
+    
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.Product-AddToCart:hover, .Product-AddToCart:focus{
+    background-color: rgb(214,100,67);
+}
+
+/*End of Product Listing*/
+
+/*Grid System*/
+.Grid-Text{
+    text-align: center;
+    color:rgb(57,56,76);
+    padding: 0em;
+}
+.OneColumn{
+    background-color: rgb(242,243,234);
+    width:100%;
+    height:100px;
+}
+/*Grid System*/
+/*End of Combined Elements*/
+
+@media (max-width:60em){
+    .Everything-Except-Title{
+        padding:2em;
+        margin: 0 3em 0em 3em;
+    }  
+    
+    .InputLabel{
+        padding-left:0;
+    }
+    
+    input[type=text]{
+        width:80%;
+    }
+    
+    .Example-h1{
+        font-size: 2em;
+        padding: 0 .25em 0 .25em
+    }
+    
+    .Example-size, .Example-font{
+        font-size:.75em;
+        padding-left:.25em;
+    }
+    
+    .Example-h2{
+        font-size: 1em;
+    }
+    
+    .Example-h3{
+        font-size: .75em;
+    } 
+    
+    .Example-h4{
+        font-size: .50em;
+    } 
+    
+    .Example-Paragraph{
+        width:100%;
+    }
+}
+
+@media (max-width: 30em){
+    .Everything-Except-Title{
+        padding:1em;
+        margin: 0 1em 0em 1em;
+    } 
+}
+
+footer{
+    background-color: #1F1D2B;
+}
+
+.Footer-Header{
+    color:#F2F2E9;
+    margin: 2em 0 .5em 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.Footer-Link{
+    color:#F2F2E9;
+    display: block;
+}
+
+.Footer-Link:focus, .Footer-Link:hover{
+    text-decoration: underline;
+}
+
+.Footer-Shop{
+    grid-column: span 4;
+    margin-bottom: 2em;
+}
+
+.Footer-About{
+    grid-column: span 4;
+    margin-bottom: 2em;
+}
+
+.Footer-BTS{
+    grid-column: span 4;
+    margin-bottom: 2em;
+}
+
+.Footer-Copyright{
+    grid-column: span 12;
+    text-align: center;
+    color: #59598E;
+    border-top: 1px solid #59598E;
+}
+
+@media (max-width: 24.250em){
+    
+    .Footer-Shop{
+        grid-column: span 12;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .Footer-About{
+        grid-column: span 12;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .Footer-BTS{
+        grid-column: span 12;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+}
+
