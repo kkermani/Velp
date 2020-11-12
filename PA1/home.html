@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Velp
+</title>
+<meta charset="utf-8">
+
+	<!--Viewport-->
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+	<script>filterSelection("all")
+		function filterSelection(c) {
+		  var x, i;
+		  x = document.getElementsByClassName("filterDiv");
+		  if (c == "all") c = "";
+		  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+		  for (i = 0; i < x.length; i++) {
+			w3RemoveClass(x[i], "show");
+			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		  }
+		}
+
+		// Show filtered elements
+		function w3AddClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+			if (arr1.indexOf(arr2[i]) == -1) {
+			  element.className += " " + arr2[i];
+			}
+		  }
+		}
+
+		// Hide elements that are not selected
+		function w3RemoveClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+			while (arr1.indexOf(arr2[i]) > -1) {
+			  arr1.splice(arr1.indexOf(arr2[i]), 1);
+			}
+		  }
+		  element.className = arr1.join(" ");
+		}
+
+		// Add active class to the current control button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+		  });
+		}
+	</script>
+
+</head>
+
+<body>
+
+<!--Navigation-->
+<div class="topnav">
+
+	<a href="home.php" class="logo">
+		<img src="img/logo.png" width="75" height="75" alt="Website Logo">
+	</a>
+
+	<div class="topnavlist">
+		<a class="topnavbtn" href="home.php">Home</a>
+		<a class="topnavbtn" href="index.php">Account</a>
+	</div>  
+</div>
+
+<!--Filters -->
+<div class="container filterBtn" id="myBtnContainer">
+  <button class="btn" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('new')"> New</button>
+   <button class="btn" onclick="filterSelection('top')"> Top Rated</button>
+  </div>
+
+
+<!--Filtered contents-->
+ <div class="container">
+  <div class="filterDiv new"> <a target="content.php" href="content.php">
+    <img src="img/img1.jpg" alt="image info" width="500" height="200">
+  </a>
+  <div class="desc">Tenet</div>
+</div>
+
+
+<div class="filterDiv top"><a target="content.php" href="content.php">
+  <img src="img/img1.jpg" alt="image info" width="500" height="200">
+  </a>
+  <div class="desc">Godfather</div></div>
+<div class="filterDiv top"><a target="content.php" href="content.php">
+  <img src="img/img1.jpg" alt="image info" width="500" height="200">
+  </a>
+  <div class="desc">Troy</div></div>
+<div class="filterDiv new"><a target="content.php" href="content.php">
+  <img src="img/img1.jpg" alt="image info" width="500" height="200">
+  </a>
+  <div class="desc">Borat 2</div></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+/* Initialize custom font faces */
+
+@font-face
+{
+    font-family: 'Casanova Scotia';
+	font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Casanova-Scotia.woff2') format('woff2'),
+         url('../fonts/Casanova-Scotia.woff') format('woff'),
+		 url('../fonts/Casanova-Scotia.otf') format('opentype');
+}

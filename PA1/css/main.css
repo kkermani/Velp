@@ -1,0 +1,179 @@
+﻿/* Stylize website */
+
+*, *::after, *::before
+{
+	box-sizing: border-box;
+}
+
+body
+{
+  margin: 0;
+  color: #f2f2f2;
+  background-color: #0d0d0d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the nav bar */
+
+.topnav
+{
+  margin: 0;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;	
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+  font-family: 'Casanova Scotia', Arial, sans-serif;
+  
+  background-color: #cc0000;
+}
+
+.logo
+{
+  margin: 0;
+  display: inline-block;
+  cursor: pointer;
+  padding: 15px;
+  
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.topnavlist
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.topnavbtn
+{
+  display: inline-block;
+  color: #f2f2f2;
+  background-color: #cc0000;
+  text-align: center;
+  margin: 0 15px;
+  padding: 25px;
+  font-size: 18px;
+    
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  transition: background-color 0.25s ease-out;
+}
+
+.topnavbtn:hover, .topnavbtn:focus
+{
+  color: #f2f2f2;
+  background-color: #990000;
+  text-decoration: none;
+}
+
+.topnavbtn a:hover, .topnavbtn a:focus
+{
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+/* Style the buttons */
+.btn
+{
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 250px;
+  color: #f2f2f2;
+  background-color: #e68a00;
+  text-align: center;
+  margin: 0 5px;
+  padding: 25px;
+  cursor: pointer;
+  line-height: 20px;
+  align-self : center;
+  
+  font-size: 24px;
+  font-family: 'Casanova Scotia', Arial, sans-serif;
+  
+  
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  transition: background-color 0.25s ease-out;
+}
+
+/* Add a lighter background on mouse-over */
+.btn:hover, .btn:focus, .btn.active
+{
+  color: #0d0d0d;
+  background-color: #ffad33;
+  text-decoration: none;
+}
+
+/* Add a lighter background on mouse-over */
+.btn a:hover, .btn a:focus, .btn.active
+{
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+/* Style home page elements */
+.filterBtn
+{
+  margin-top: 75px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container
+{ 
+  margin-top: 25px;
+  overflow: hidden;
+}
+
+.filterDiv
+{
+  background-color: #ff9900;
+  color: #0d0d0d;
+  width: 500px;
+  line-height: 100px;
+  text-align: center;
+  margin: 10px auto;
+  
+  font-size: 24px;
+  font-family: 'Casanova Scotia', Arial, sans-serif;
+  
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show
+{
+  display: block;
+}
+
+/* Main home column */
+.main
+{   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #0d0d0d;
+  padding: 20px;
+}
+
+
+
