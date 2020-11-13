@@ -7,11 +7,11 @@
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    
+
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    
+
     justify-content: space-around;
 }
 
@@ -25,16 +25,16 @@
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    
+
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    
+
     justify-content: space-around;
 }
 
 .Font-Item{
-    border: 1px solid rgb(29,28,42);
+    border: 1px solid rgb(0,0,0);
     padding: 1em;
     width:180px;
     margin:1em;
@@ -46,11 +46,11 @@
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    
+
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    
+
     justify-content: flex-start;
 }
 
@@ -61,7 +61,7 @@
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    
+
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -78,12 +78,12 @@
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    
+
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgb(242,243,234);
+    background-color: white;
     align-items:baseline;
 }
 
@@ -101,12 +101,12 @@
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    
+
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgb(242,243,234);
+    background-color: white;
     align-items:baseline;
 }
 img{
@@ -139,7 +139,7 @@ img{
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    
+
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -166,15 +166,15 @@ img{
 /*Grid System*/
 
 .TwoColumn-Container{
-    background-color: rgb(242,243,234);
+    background-color: white;
     width:100%;
     height:100px;
     margin-top:1em;
-    
+
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    
+
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -182,20 +182,20 @@ img{
 }
 
 .TwoColumn-Item{
-    background-color: rgb(214,100,67);
+    background-color: rgb(255,0,0);
     width:45%;
     margin:1em 1em 1em;
 }
 
 .ThreeColumn-Container{
-    background-color: rgb(242,243,234);
+    background-color: white;
     width:100%;
     height:100px;
     margin-top:1em;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    
+
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -203,20 +203,20 @@ img{
 }
 
 .ThreeColumn-Item{
-    background-color: rgb(214,100,67);
+    background-color: rgb(255,0,0);
     width:30%;
     margin:1em;
 }
 
 .NineColumn-Container{
-    background-color: rgb(242,243,234);
+    background-color: white;
     width:100%;
     height:100px;
     margin-top:1em;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    
+
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -237,25 +237,25 @@ img{
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    
+
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content:space-around;
-    
+
 }
 
 .Wireframe-Button{
     display:inline-block;
     align-content: center;
-    font-family: 'Righteous', cursive;
+    font-family: sans-serif;
     text-transform:uppercase;
     font-size:1em;
     padding:1.5em;
     text-decoration: none;
     color:rgb(242,243,234);
     background-color:rgb(115,149,181);
-    
+
     -webkit-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
 }
@@ -263,6 +263,3 @@ img{
 .Wireframe-Button:hover{
     background-color: rgb(214,100,67);
 }
-
- 
-

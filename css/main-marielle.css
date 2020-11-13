@@ -5,11 +5,11 @@
 body{
     margin:0;
     padding:0;
-    background:#F3F3EB;
+    background:white;
 }
 
 h1{
-    font-family:'Righteous', cursive;
+    font-family:sans-serif;
     font-size: 3em;
     text-transform: uppercase;
     color: #1F1D2B;
@@ -18,7 +18,7 @@ h1{
 }
 
 h2{
-    font-family:'Righteous', cursive;
+    font-family:sans-serif;
     font-size:2em;
     text-transform: uppercase;
     color: #1F1D2B;
@@ -27,13 +27,13 @@ h2{
 }
 
 h3{
-    font-family: 'PT Mono', monospace;
+    font-family: sans-serif;
     font-size: 1.5em;
     color: #1F1D2B;
 }
 
 h4{
-    font-family: 'PT Mono', monospace;
+    font-family: sans-serif;
     font-size: 1em;
     color: #1F1D2B;
     margin-top: 0.25em;
@@ -41,13 +41,13 @@ h4{
 }
 
 p, label{
-    font-family: 'PT Sans', sans-serif;
+    font-family: sans-serif;
     font-size: 1em;
     line-height: 1.75em;
 }
 
 a{
-    font-family: 'PT Sans', sans-serif;
+    font-family:sans-serif;
     font-size: 1em;
     line-height: 1.75em;
     text-decoration:none;
@@ -55,20 +55,20 @@ a{
 }
 
 .Button{
-    font-family: 'Righteous', cursive;
+    font-family: sans-serif;
     text-transform:uppercase;
     font-size:1em;
     padding:1.5em;
-    color:rgb(242,243,234);
-    background-color:rgb(115,149,181);
+    color:white;
+    background-color:rgb(123,123,123);
     text-align: center;
-    
+
     -webkit-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
 }
 
 .Button:hover, .ExampleButton-Item:focus{
-    background-color: rgb(214,100,67);
+    background-color: rgb(255,0,0);
     -webkit-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
 }
@@ -106,15 +106,15 @@ a{
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    
+
     justify-content: space-between;
     align-items:baseline;
-    
+
     padding: 0 6em 0 6em;
 }
 
 .Nav-Button{
-    font-family:'PT Mono', monospace;
+    font-family:sans-serif;
     font-size:1em;
     text-transform: uppercase;
     color: #F2F2E9;
@@ -122,7 +122,7 @@ a{
 }
 
 .Nav-SiteTitle{
-    font-family:'Righteous', cursive;
+    font-family:sans-serif;
     font-size: 2.250em;
     text-transform: uppercase;
     color: #F2F2E9;
@@ -143,11 +143,11 @@ a{
     background-color:#C4513B;
     max-width:20em;
     box-shadow: 4px 4px 10px rgba(51, 51, 51, 0.2);
-    z-index:1;  
+    z-index:1;
 }
 
 .Nav-Dropdown-Content a{
-    font-family: 'PT Mono', monospace;
+    font-family: sans-serif;
     font-size: 1em;
     text-transform: capitalize;
     padding: .5em 1em .5em 1em;
@@ -190,14 +190,14 @@ a{
 }
 
 .Nav-MobileMenu-Titles{
-    font-family:'Righteous', cursive;
+    font-family:sans-serif;
     text-transform: uppercase;
     margin: 0;
     font-size: 1.25em;
 }
 
 .Nav-MobileMenu-Special{
-    font-family:'Righteous', cursive;
+    font-family:sans-serif;
     text-transform: uppercase;
     margin: 0;
     font-size: 1.25em;
@@ -214,8 +214,8 @@ a{
 
 @media (max-width:50.938em){
     .NavContainer{
-      padding: 0;  
-    } 
+      padding: 0;
+    }
 }
 
 @media (max-width: 38.125em){
@@ -226,7 +226,7 @@ a{
         padding-left: 1em;
         font-size: 1.5em;
     }
-    
+
     .Nav-Mobile-Display{
         display:block;
     }
@@ -375,9 +375,9 @@ a{
     border-width: 0.05em;
     border-color: #D9D9D2;
     box-shadow: 4px 4px 10px #CECEC9;
-    
+
     padding-bottom: 1em;
-    
+
     -webkit-transition: transform 0.5s ease-out;
     transition: transform 0.5s ease-out;
 }
@@ -446,12 +446,12 @@ a{
     .Home-AboutUs-Img{
         grid-column: span 12;
     }
-    
+
     .Home-AboutUs-Copy{
         grid-column: span 12;
         margin-bottom: 3em;
     }
-    
+
 }
 
 @media (max-width: 65.313em){
@@ -464,11 +464,11 @@ a{
     .Home-AboutUs-Img{
         max-height: 30em;
     }
-    
+
     .Retrofuturism{
         height: 28em;
     }
-    
+
     .Home-Button{
     margin-top: 3em;
     grid-column: 5 / span 4;
@@ -485,19 +485,19 @@ a{
     .Home-Description-Sale-Item{
         grid-column: span 4;
     }
-    
+
     .Home-H1-Description{
         font-size:3em;
     }
-    
+
     .Home-H3-Description{
         font-size:1.25em;
     }
-    
+
     .Header{
         height:45em;
     }
-    
+
     .Retrofuturism{
         height: 35em;
     }
@@ -510,20 +510,20 @@ a{
     .HDSI-Hide3{
         display: none;
     }
-    
+
     .HDSI-Hide2{
         display: none;
     }
-    
+
     .Home-Description-Sale-Item{
         grid-column: span 6;
     }
-    
+
     h1{
         font-size: 2.5em;
     }
-    
-    
+
+
     .AboutUs{
         margin-top: 4em;
     }
@@ -550,16 +550,16 @@ a{
     .Retrofuturism{
         height: 38em;
     }
-    
+
     .Home-Retrofuturism-Button{
         grid-column: 4 / span 6;
     }
-    
+
     .Home-Description-Sale-Item{
         grid-column: 3 / span 8;
         height:17em;
     }
-    
+
     .Home-Button{
         grid-column: 3 / span 8;
     }
@@ -567,7 +567,7 @@ a{
         padding-left: 1em;
         padding-right: 1em;
     }
-    
+
 }
 
 @media (min-width: 31.250em){
@@ -604,7 +604,7 @@ a{
 
 .BestSellers-TopBar-SortBy select{
     margin: 1em 0 1em 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: sans-serif;
     font-size: 1em;
     line-height: 1.75em;
     background-color: #F3F3EB;
@@ -628,7 +628,7 @@ a{
     margin-top: 1em;
     margin-bottom: 1em;
     box-shadow: 4px 4px 10px #CECEC9;
-    
+
     -webkit-transition: transform 0.5s ease-out;
     transition: transform 0.5s ease-out;
 }
@@ -712,7 +712,7 @@ a{
     .TopBar .Content-Wrapper{
         margin-left: 1em;
     }
-    
+
     .Content-Wrapper{
         padding-left: 1em;
         padding-right: 1em;
@@ -723,7 +723,7 @@ a{
 @media (max-width:62.188em){
    .BestSellers-TopBar-SortBy{
         grid-column: 9 / span 4;
-    }    
+    }
 }
 
 @media (max-width: 47.500em){
@@ -744,7 +744,7 @@ a{
         grid-column: span 12;
         text-align:center;
     }
-    
+
     .BestSellers-TopBar-SortBy select{
         margin: 0 0 1em 0;
     }
@@ -765,7 +765,7 @@ a{
 @media (max-width: 31.205em){
     .BestSellers-Items{
         grid-column: span 12;
-    }  
+    }
 }
 
 /*Lising Page*/
@@ -951,7 +951,7 @@ a{
 @media(max-width: 60.000em){
     .Retrofuturism-H1{
         font-size: 4em;
-    } 
+    }
     .Retrofuturism-Header{
         height: 28em;
     }
@@ -966,7 +966,7 @@ a{
     }
     .Retrofuturism-H1{
         font-size: 3em;
-    } 
+    }
     .Retrofuturism-Copy h1{
         margin-top: 1em;
     }
@@ -1011,7 +1011,7 @@ a{
     .About-Image{
         grid-column: span 12;
     }
-    
+
     .About-Copy{
         grid-column: span 12;
     }
@@ -1130,7 +1130,7 @@ a{
     .Cart-Contents{
         grid-column: span 12;
     }
-    
+
     .Cart-Total{
         grid-column: span 12;
         margin: 2em 0 2em 0;
@@ -1142,36 +1142,36 @@ a{
         flex-direction: column;
         margin-bottom: .5em;
     }
-    
+
     .Cart-Item-Image{
         align-self: center;
     }
-    
+
     .Cart-Item-Description{
         text-align: center;
     }
-    
+
     .Cart-Item-Description h3{
         margin-bottom: 0;
     }
-    
+
     .Cart-Item-Description p{
         margin-bottom: 0;
     }
-    
+
     .Cart-Item-Subtotal{
         margin-bottom: 1em;
         text-align: center;
     }
-    
+
     .Cart-Total h3{
         font-size: 1.25em;
     }
-    
+
     .Cart-Total h4{
         font-size: .75em;
     }
-    
+
     .Cart{
         margin-top: 1em;
     }
@@ -1189,7 +1189,7 @@ a{
     flex-direction: column;
     border: 1px solid #1F1D2B;
     box-shadow: 4px 4px 10px rgba(51, 51, 51, 0.2);
-    
+
     margin-bottom: 2em;
 }
 
@@ -1202,14 +1202,14 @@ a{
     display: none;
 
     -webkit-transition: display 0.5s ease-out;
-    transition: display 0.5s ease-out;  
+    transition: display 0.5s ease-out;
 }
 
 .Checkout-Info:hover .Checkout-Info-Hidden{
     display: block;
-    
+
     -webkit-transition: display 0.5s ease-out;
-    transition: display 0.5s ease-out;  
+    transition: display 0.5s ease-out;
 }
 
 .Checkout-Form{
@@ -1248,7 +1248,7 @@ a{
 }
 
 .Checkout-Label{
-    font-family: 'PT Mono', monospace;
+    font-family: sans-serif;
 }
 
 
@@ -1259,7 +1259,7 @@ a{
 
 .Checkout-Form select{
     width: 100%;
-    border: 1px solid #1F1D2B; 
+    border: 1px solid #1F1D2B;
     background: none;
     top: 0;
     left: 0;
@@ -1268,12 +1268,12 @@ a{
     outline: 0;
     text-align: left;
     margin:0 0 1em 0;
-    font-family: 'PT Mono', monospace;
+    font-family: sans-serif;
 }
 
 .Checkout-Input{
     width: 100%;
-    border: 1px solid #1F1D2B; 
+    border: 1px solid #1F1D2B;
     background: none;
     top: 0;
     left: 0;
@@ -1304,7 +1304,7 @@ a{
 .Checkout-Underline{
     padding-bottom: 1em;
     border-bottom: 1px solid #1F1D2B;
-    
+
 }
 
 .Button-Container{
@@ -1328,12 +1328,12 @@ a{
     .Checkout-Payment{
         grid-column: span 12;
     }
-    
+
     .Checkout-Item{
         grid-column: span 12;
         margin-top: 0;
     }
-    
+
     .Checkout-Form{
         width: 30em;
     }
@@ -1351,7 +1351,7 @@ a{
     float: left;
     width: 50%;
     padding: 100px;
-    background-color: rgb(242,243,234);
+    background-color: white;
     text-align: center;
 }
 
@@ -1370,15 +1370,15 @@ a{
 }
 
 form {
-    
+
   margin: 2em 0;
   width: 35%;
-  display: block; 
+  display: block;
     margin: auto;
 }
 
- 
-.field {   
+
+.field {
   display: flex;
   flex-flow: column-reverse;
   margin-bottom: 1em;
@@ -1393,14 +1393,14 @@ label, input {
 }
 
 input {
-  font-family: 'PT Mono', monospace;
+  font-family: sans-serif;
   border: .10em;
   border-style: solid;
 /*  border-width: thick;*/
   font-size: 1em;
   text-align: center;
   -webkit-appearance: none;
-  
+
   padding-top: 1em;
   cursor: text;
 }
@@ -1438,7 +1438,7 @@ input:focus + label {
   cursor: pointer;
 }
   .log-Button{
-    display: block; 
+    display: block;
     margin: auto;
     width: 35%;
 
@@ -1523,7 +1523,7 @@ input:focus + label {
 }
 
 .contact-map{
-    grid-column: span 6;  
+    grid-column: span 6;
 }
 
 iframe{
@@ -1532,14 +1532,14 @@ iframe{
 }
 
 textarea{
-    font-family: 'PT Mono', monospace;
+    font-family: sans-serif;
   border: .10em;
   border-style: solid;
 /*  border-width: thick;*/
   font-size: 1em;
   text-align: center;
   -webkit-appearance: none;
-  
+
   padding-top: 1em;
   cursor: text;
 }
@@ -1557,7 +1557,7 @@ textarea{
         justify-content: center;
       flex-direction: column;
     }
-    
+
 }
 /*end of contact page*/
 
@@ -1605,7 +1605,7 @@ footer{
 }
 
 @media (max-width: 24.250em){
-    
+
     .Footer-Shop{
         grid-column: span 12;
         margin-bottom: 1em;
@@ -1624,4 +1624,3 @@ footer{
         text-align: center;
     }
 }
-
