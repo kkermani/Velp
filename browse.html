@@ -39,10 +39,29 @@
 
   <div class="intro">
 
-    <h2>Your favourites</h2>
+    <h2>Browse to find and select your favourite movies</h2>
   </div>
 
+  <div class="container filterBtn" id="myBtnContainer">
+    <h2>Sort</h2>
+    <button class="btn" onclick="filterSelection('all')">all</button>
+    <button class="btn" onclick="filterSelection('new')"> Newest</button>
+     <button class="btn" onclick="filterSelection('top')"> Highest Rating</button>
+     <button class="btn" onclick="filterSelection('top')"> Shortest</button>
+     <button class="btn" onclick="filterSelection('top')"> Trending</button>
+    </div>
 
+    <form action="/action_page.php">
+  <input type="checkbox" id="filter1" name="Filter1" value="all">
+  <label for="vehicle1"> All</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Comedy">
+  <label for="vehicle2"> Comedy</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Drama">
+  <label for="vehicle3"> Drama</label><br><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Action">
+  <label for="vehicle3"> action</label><br><br>
+  <input type="submit" value="search">
+</form>
 
   <div class="container">
 
