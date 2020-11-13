@@ -1,158 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>
-Log In
-</title>
-<meta charset="utf-8">
-
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link href="css/browse.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/main-marielle.css" rel="stylesheet">
     <link href="css/flexbox.css" rel="stylesheet">
-
- <!--        font linking-->
-        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
-
-<!--        viewport-->
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 </head>
+<body>
+  <div class="header">
+    <div class="navcontainer">
+      <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo logoCo"><a href="index.html" class="logoCo"><strong>VELP</strong></a></div>
+        <ul class="links">
+          <li><a href="favourite.html">Favourites</a></li>
+          <li><a href="account.html">Account</a></li>
 
-<body>	 
-    <nav class="Nav">
-     <div class="NavContainer">
-        <div class="Nav-Item Nav-Mobile-Hide">
-            <div class="Nav-Dropdown">
-                <a class="Nav-Button"> SHOP &#8964;</a>
-                <div class="Nav-Dropdown-Content">
-                    <a href="BestSellers.html">Bestsellers</a>
-                    <a href="BestSellers.html">Clothing</a>
-                    <a href="BestSellers.html">Books</a>
-                    <a href="BestSellers.html">Posters</a>
-                    <a href="BestSellers.html">Antiques</a>
-                </div>
-            </div>
-            <div class="Nav-Dropdown">
-                <a class="Nav-Button"> ABOUT &#8964;</a>
-                <div class="Nav-Dropdown-Content">
-                    <a href="about.html">About Us</a>
-                    <a href="WhatIsRetrofuturism.html">What Is Retrofuturism?</a>
-                    <a href="contactus.html">Contact Us</a>
-                </div>
-            </div>
-        </div>
-        <div class="Nav-Item">
-            <a class="Nav-SiteTitle" href="index.html">Space Futura</a>
-        </div>
-        <div class="Nav-Item Nav-Mobile-Hide">
-            <a class="Nav-Button" href="login.html">Login</a>
-            <a class="Nav-Button" href="cart.html">Cart</a>
-        </div>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <span class=" c line"></span>
+          <span class=" c line"></span>
+          <span class=" c line"></span>
+        </label>
+      </nav>
     </div>
-        <div class="Nav-Item Nav-Mobile-Display"> 
-            <a class="Nav-Button">Menu</a>
-        
-        <div class="Nav-MobileMenu">
-            <h4 class="Nav-MobileMenu-Titles">Shop</h4>
-            <a href="BestSellers.html">Bestsellers</a>
-            <a>Clothing</a>
-            <a>Books</a>
-            <a>Posters</a>
-            <a>Antiques</a>
-            <h4 class="Nav-MobileMenu-Titles"> About</h4>
-            <a>About Us</a>
-            <a>What Is Retrofuturism?</a>
-            <a href="contactus.html">Contact Us</a>
-            <a class="Nav-MobileMenu-Special" href="login.html">Login</a>
-            <a class="Nav-MobileMenu-Special" href="cart.html">Cart</a>
-            
-        </div>
-        </div>
-    </nav>
- 
-<!--    start of header section-->
-
-
-<div class="row">
-  <div class="column">
-  	<h2>sign in to get back to future</h2>
-
-
-  <form>
-
-  <div class="field">
-    <input type="text" name="email" id="email" placeholder="You@example.com">
-    <label for="email">email</label>
-  </div>
-  
-  <div class="field">
-    <input type="Password" name="Password" id="Password" placeholder="*********">
-    <label for="Password">Password</label>
-  </div>
-  </form>
-  <a class="Button log-Button" href="cart.html">Sign in</a>
   </div>
 
-<div class="vl"></div>
+   <div class="container">
+       <div class="profile-header">
+           <div class="profile-img">
+               <img src="img/profilepic.png" width="200" alt="">
+           </div>
+           <div class="profile-nav-info">
+               <h3 class="user-name">USER PROFILE</h3>
+               <div class="address">
+                   <p class="City">Surrey,BC </p>
+                   <span class="country">Canada</span>
+               </div>
+           </div>
+           <div class="profile-option">
+               <div class="notification">
+                   <i class="fa fa-bell"></i>
+                   <span class="alert-message">1</span>
+               </div>
+           </div>
+       </div>
+       <div class="main-bd">
+           <div class="left-side">
+               <div class="profile-side">
+                   <p class="mobile-no"><i class="fa fa-phone"></i>(604)-123-4567</p>
+                   <p class="user-mail"><i class="fa fa-envelope"></i>user@gmail.com</p>
+                   <div class="user-bio">
+                      <h3>Bio</h3>
+                       <p class="bio">Hi! I am a Velp user and I love movies! Check out my reviews! MOVIES MOVIES MOVIES! </p>
+                   </div>
+                   <div class="profile-btn">
+                       <button class="createbtn">
+                           <i class="fa fa-plus"></i>Create
+                       </button>
+                   </div>
+                   <div class="user-rating">
+                       <h3 class="rating">4.5</h3>
+                       <div class="rate">
+                          <div class="stars">
 
-  <div class="column">
-  <h2>Don't have an account?</h2>
-  <form>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                          </div>
+                          <span class="no-user"><span>123</span>&nbsp;&nbsp; reviews</span>
+                       </div>
+                   </div>
 
-  <div class="field">
-    <input type="text" name="name" id="name" placeholder="Dave Smith">
-    <label for="name">name</label>
-  </div>
+               </div>
+           </div>
+           <div class="right-side">
+               <div class="nav">
+                   <ul>
+                       <li onclick="tabs(0)" class="user-post active">Posts</li>
+                       <li onclick="tabs(1)" class="user-review">Reviews</li>
+                       <li onclick="tabs(2)" class="user-setting">Settings</li>
+                   </ul>
+               </div>
+               <div class="profile-body">
+                   <div class="profile-posts tab">
+                       <h1>Your Posts</h1>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iure quae sint magni cupiditate non, quod velit similique ducimus! Impedit dicta, sit officiis rerum. Adipisci ut facere atque nostrum odit dolorum ea cumque modi. Asperiores dolorum, iure odit ad, tempore magnam beatae deleniti soluta quisquam assumenda pariatur incidunt sapiente eaque modi earum. Ab ducimus accusamus recusandae, odio iusto commodi fuga, repellat inventore iure aut libero consequatur sequi nesciunt dolorem ipsam.</p>
+                   </div>
+                   <div class="profile-reviews tab">
+                      <h1>Your Reviews</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus id cupiditate libero eius dolore, in rem nulla reiciendis. Qui, vero voluptatum! Quia iusto accusamus corporis, illo, ullam quibusdam maiores assumenda explicabo illum eligendi odit fugiat a, laborum rerum architecto eum ut distinctio. Error quos temporibus at expedita? Optio amet aliquam provident voluptatum minima quidem nemo harum doloremque. Est nihil quisquam quis deserunt repellat, natus, saepe laborum. Ipsum officiis, nisi optio.</p>
 
-  <div class="field">
-    <input type="text" name="emailSU" id="emailSU" placeholder="You@example.com">
-    <label for="emailSU">email</label>
-  </div>
-  
-  <div class="field">
-    <input type="text" name="PasswordSU" id="PasswordSU" placeholder="*********">
-    <label for="PasswordSU">Password</label>
-  </div>
+                   </div>
+                   <div class="profile-settings tab">
+                      <h1>Account Setting</h1>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, eligendi magnam. Fuga ducimus assumenda, nemo sit, quod eveniet quidem dolorum modi voluptas dignissimos tempore omnis saepe officiis aliquam. Tempore sed voluptatum, illo sit vitae ullam consequatur, architecto enim iusto asperiores cupiditate debitis blanditiis harum quas ad dolor dolores veritatis molestiae! Aperiam, laboriosam! Temporibus modi vero ab quis, qui fuga reiciendis, hic, molestias vel ut recusandae eius nesciunt harum praesentium? Libero.</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
 
-  <div class="field">
-    <input type="text" name="ConPassword" id="ConPassword" placeholder="*********">
-    <label for="ConPassword">Confirm Password</label>
-  </div>
-  </form>
-  <a class="Button log-Button" href="Signup.html">Sign Up</a>
-</div>
-</div>
+   <footer class="footer-distributed">
+
+     <div class="footer-left">
+
+       <h3 class="logoFooter">VELP</h3>
+
+       <p class="footer-links textFooter">
+         <a href="index.html">Home</a>
+         ·
+         <a href="favourite.html">Favourites</a>
+         ·
+         <a href="account.html">Account</a>
+         ·
+
+       </p>
+
+       <p class="footer-company-name logoFooter">VELP &copy; 2019</p>
+     </div>
+
+     <div class="footer-center textFooter">
+
+       <div>
+         <i class="fa fa-map-marker"></i>
+         <p><span>8884 140B Street</span>Surrey, BC, Canada</p>
+       </div>
+
+       <div>
+         <i class="fa fa-phone"></i>
+         <p>+1(604)-240-1471</p>
+       </div>
+
+       <div>
+         <i class="fa fa-envelope"></i>
+         <p><a href="mailto:shyamagalabadage@gmail.com" class="emailColor">info@velp.com</a></p>
+       </div>
+
+     </div>
+
+     <div class="footer-right textFooter">
+
+       <p class="footer-company-about">
+         <span>About us</span>
+         velp, the ultimate movie review website where you can select your favourite movie and review them
+
+       </p>
+
+       <div class="footer-icons">
+
+         <a href="https://www.facebook.com/groups/98439537650"><i class="fa fa-facebook"></i></a>
+         <a href="https://twitter.com/nperera17?s=20"><i class="fa fa-twitter"></i></a>
+         <a href="https://ca.linkedin.com/in/nisha-perera-667b54130?trk=people-guest_people_search-card"><i
+             class="fa fa-linkedin"></i></a>
+
+
+       </div>
+
+     </div>
+
+   </footer>
 
 
 
-   <footer>
-        <div class="Content-Wrapper TwelveColGrid">
-            <div class="Footer-Shop">
-                <h3 class="Footer-Header">Shop</h3>
-                <a class="Footer-Link" href="BestSellers.html">Best Sellers</a>
-                <a href="BestSellers.html" class="Footer-Link">Clothing</a>
-                <a href="BestSellers.html" class="Footer-Link">Books</a>
-                <a href="BestSellers.html" class="Footer-Link">Posters</a>
-                <a href="BestSellers.html" class="Footer-Link">Antiques</a>
-            </div>
-            <div class="Footer-About">
-                <h3 class="Footer-Header">About</h3>
-                <a class="Footer-Link" href="about.html">About Us</a>
-                <a class="Footer-Link" href="WhatIsRetrofuturism.html">What is Retrofuturism?</a>
-                <a class="Footer-Link" href=contactus.html> Contact Us</a>
-            </div>
-            <div class="Footer-BTS">
-                <h3 class="Footer-Header">Behind the Scenes</h3>
-                <a class="Footer-Link" href="StyleGuide.html">Styleguide</a>
-                <a  class="Footer-Link" href="https://github.com/tamagotch-goth/P02-Kian-Marielle">Git</a>
-                <a class="Footer-Link" href="Citations.html">Citations</a>
-            </div>
-            <div class="Footer-Copyright">
-               <p> &#169; 2020 Space Futura</p>
-            </div>
-        </div>
-    </footer>
+    <script src="./jquery/jquery.js"></script>
+    <script src="./main.js"></script>
 
 </body>
-
 </html>
