@@ -197,8 +197,8 @@ nav a:hover::before {
     color: black;
     transform: translateY(30%);
     text-align: center;
-    margin: 20px;
-    padding: 20px;
+    margin: 50px;
+    padding: 10px;
 }
 
 .intro h1 {
@@ -223,8 +223,57 @@ nav a:hover::before {
     }
   }
 
+  .profile-option {
+      width: 40px;
+      height: 40px;
+      background: rgb(255,0,0);
+      position: absolute;
+      right: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all .5s ease-in-out;
+      outline: none;
+
+  }
+
+  button.browsebtn
+   {
+     margin-left: 28rem;
+     text-align: center;
+      border: 0;
+      padding: 2px;
+      width: 100%;
+      border-radius: 5px;
+      background:  rgb(255,0,0);
+      font-family: sans-serif;
+      font-size: 1rem;
+      /* margin: 5px 2px; */
+      cursor: pointer;
+      outline: none;
+      /* margin-bottom: 10px; */
+      transition: background .3s ease-in-out;
+      box-shadow: 0px 5px 7px 0px rgba(0,0,0,.3);
+      color: #fff;
+  }
+  button.browsebtn:hover{
+      background: rgba(255, 0, 0, .9)
+  }
+
+
+  .intro h1 {
+      /* transform: translateY(-60%); */
+      transform: translateY(-40%);
+      font-family: sans-serif;
+  }
+
 .intro h2 {
-    transform: translateY(-60%);
+    /* transform: translateY(-60%); */
+    transform: translateY(60%);
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 40px;
@@ -250,26 +299,27 @@ nav a:hover::before {
     font-size: 15px;
 }
 
+
 .container {
-    padding-top: 50px;
-    width: 80%;
-    margin: 70px auto 0;
-    margin-bottom: 200px;
+    padding-top: 100px;
+    width: 100%;
+    margin: 10px auto 0;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.container {
-    padding-top: 100px;
-    width: 100%;
-    /*margin: 70px auto 0;*/
-    margin-bottom: 10rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+.more {
+  height:50px;
+  position: relative;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .container .box {
@@ -307,6 +357,7 @@ nav a:hover::before {
 
 .container .box:hover .details {
     transform: scaleY(1);
+    transform: scaleX(1);
 }
 
 .container .box .details .content {
