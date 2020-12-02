@@ -45,8 +45,6 @@ nav .logo {
     color: white;
 }
 
-
-
 .logoCo a:hover {
     color: white
 }
@@ -194,6 +192,20 @@ nav a:hover::before {
 /* [START] browse [START]
 		retrieved from https://www.youtube.com/watch?v=ltxxNidblts&t=595s*/
 
+.error {
+    color: black;
+    transform: translateY(30%);
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.intro p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 
 .intro {
     color: black;
@@ -207,38 +219,6 @@ nav a:hover::before {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 60px;
-}
-
-.containerfilterBtn h2 {
-font-family: sans-serif;
-font-size: 50px;
-text-align: center;
-margin-right: 400px;
-}
-
-.containerfilterBtn  {
-margin-left: 450px;
-}
-
-form {
-
-
-}
-
-
-.sortform {
-  width: 300px;
-  /* height: 100px; */
-  margin: 0;
-  padding: 50px;
-  border: 4px solid black;
-  font-size: 25px;
-  font-family: sans-serif;
-  font-weight: bolder;
-  background-color: rgb(255,0,0);
-  /* box-shadow: 2px 2px 7px 1px #FF0000; */
-  text-align: left;
-
 }
 
 @media (max-width: 40rem) {
@@ -331,13 +311,6 @@ form {
 
 .intro p {
     font-size: 15px;
-}
-/* nisha added this to style sort form */
-form {
-    display: block;
-    margin-top: 0em;
-    font-family: sans-serif;
-
 }
 
 
